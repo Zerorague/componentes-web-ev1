@@ -2,51 +2,87 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <title>Contacto</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="contenedor">
             <header class="superior">
                 <div class="logo">
-                    <img src="logo.png" alt=""/>
-                </div>  
+                    <img src="images/logo.png" alt=""/>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li>Quienes somos</li>
+                        <li>Servicio</li>
+                        
+                    </ul>   
+                </nav>
             </header>
             <section>
                 <h1 class="titulo">Formulario de Contacto</h1>
-                <form>
-                    <label">Nombre</label>
+                <div class="formulario">
+                    <form>
+                    <label>Nombre</label>
                     <input type="text" name="nombrecampo">
                     <br/> 
-                    <input type="radio" id="femenino" name="generoF" value="F">
-                    <label for="femenino">SEXO FEMENINO</label>
+                    <label>Apellido Paterno</label>
+                    <input type="text" name="apellidopaterno">
                     <br/>
-                    <input type="radio" id="masculino" name="generoM" value="M">
-                    <label for="masculino">SEXO MASCULINO</label>
+                    <label>Apellido Materno</label>
+                    <input type="text" name="apellidomaterno">
                     <br/>
-                    <input type="radio" id="otro" name="genero0" value="O">
-                    <label for="otro">OTRO</label>
+                    <div>
+                        <input type="radio" id="femenino" name="genero" value="F">
+                        <label for="femenino">SEXO FEMENINO</label>
+                        <br/>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="masculino" name="genero" value="M">
+                        <label for="masculino">SEXO MASCULINO</label>
+                        <br/> 
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="otro" name="genero" value="0">
+                        <label for="otro">OTRO</label>
+                        <br/>  
+                    </div>
                     <br/>
-                    <select name="selector" id="selec">
-                    </select>
+
                     <label for="selec">NACIONALIDAD</label>
+                    <select name="selec" id="selec">
+                        <option value="Chilena">Chilena</option>
+                        <option value="Mexicana">Mexicana</option>
+                        <option value="Colombiana">Colombiana</option>
+                    </select>
                     <br/>
-                    <a href="">ENVIAR</a>
+                    <button type="submit">Enviar</button>
                 </form>
+                    
+                </div>
+                
             </section>
             <footer class="pie">
                 <div class="numero">
-                    <img src="logo.png" alt=""/>
+                    <img src="images/logo.png" alt=""/>
                     <p>Estamos Ubicados en Chanquico Sur S/N - San Javier</p>
                     <p>Llámanos al +569 12312345</p>
                 </div>
                 <div class="rrss">
                     <p>Síguenos en nuestras redes sociales</p>
-                    <img src="images/insta.png" alt=""/>
-                    <img src="images/twt.png" alt=""/>
-                    <img src="images/you.png" alt=""/>
+                    <div>
+                        <img src="images/insta.png" alt="instagram"/>
+                        <img src="images/twt.png" alt="twitter"/>
+                        <img src="images/youtube.png" alt="youtube"/>  
+                    </div>
+                    
                 </div>
             </footer>
         </div>   
